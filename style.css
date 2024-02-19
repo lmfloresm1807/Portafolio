@@ -1,0 +1,168 @@
+.estilo {
+    margin: 20px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background: url(./imagen/66615\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.datos{
+    text-align:center;
+    justify-content: space-evenly;
+    display: flex;
+    margin: 25px;
+    
+}
+.px{
+    font-size: 8px;
+}
+.lengua::before{
+    content: "🖥️";
+}
+.proyect::before{
+    content: "👾";
+}
+.person::before{
+    content: "👨🏽";
+}
+.datos2{
+    align-items: center;
+}
+.full{
+    font-size: 12px;
+}
+.opciones{
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    
+}
+.boton{
+    font-size: 25px;
+    background: grey;
+}
+
+.play{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: .3s;
+    
+}
+.play:hover{
+    background:  blue;
+    transition: .3s;
+}
+.section a:hover::before{
+    width: 100%;
+    
+}
+.mando::before{
+    content: "🍄 ";
+}
+.regresar{
+    margin: 25px;
+    padding: 15px;
+    border-radius: 2px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border:3px solid black;
+}
+.regresar:hover{
+    background:  blue;
+}
+.titulo{
+    
+    margin: 25px;
+}
+.info{
+    padding: 25px;
+    text-align: left;
+    background-attachment: fixed;
+    border: 2px solid black;
+    color: black;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+p{
+  font-size: 15px;  
+}
+.player{
+    padding: 25px;
+}
+
+.derechos{
+    text-align:center;
+    justify-content: center;
+    display: flex;
+    margin: 25px;
+}
+
+@keyframes estrella{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }}
+    .estrella{
+        animation-name: estrella;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    @keyframes mando{
+        from{
+            opacity: 1;
+        }to{
+            opacity: 0;
+        }}
+        .mando::before{
+            animation-name: mando;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+@media(min-width: 320px){
+    .datos{
+        display: grid;
+
+    }
+    .opciones{
+        margin-top: 100px;
+        font-size: 10px;
+        text-align: center;
+        justify-content: space-evenly;
+        display: flex;
+        
+    }
+    .player{
+        margin-top: 100px;
+    }
+    .edu{
+        display: grid;
+        font-size: 18px;
+        
+    }
+}
+@media(min-width: 321px){
+    .datos{
+        text-align:center;
+        justify-content: space-evenly;
+        display: flex;
+        margin: 25px;
+
+    }
+}
